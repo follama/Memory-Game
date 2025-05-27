@@ -1,0 +1,93 @@
+/* Base background and font */
+body {
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Center container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+  }
+  
+  /* Heading style */
+  h1 {
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Button styling */
+  .start-btn {
+    background-color: #ff69b4;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  .start-btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Button hover effect */
+  .start-btn:hover {
+    transform: scale(1.1);
+    background-color: #ff1493;
+  }
+  
+  /* Fade in keyframes */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Floating flowers */
+ /* Floating flowers animation */
+.flower {
+    position: absolute;
+    font-size: 30px;
+    opacity: 0.8;
+    animation: float 12s linear infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-120vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  /* Each flower has a unique position and delay */
+  .flower1 { left: 5%; top: 100%; animation-delay: 0s; }
+  .flower2 { left: 15%; top: 100%; animation-delay: 2s; }
+  .flower3 { left: 25%; top: 100%; animation-delay: 4s; }
+  .flower4 { left: 35%; top: 100%; animation-delay: 1s; }
+  .flower5 { left: 45%; top: 100%; animation-delay: 3s; }
+  .flower6 { left: 55%; top: 100%; animation-delay: 5s; }
+  .flower7 { left: 65%; top: 100%; animation-delay: 0.5s; }
+  .flower8 { left: 75%; top: 100%; animation-delay: 2.5s; }
+  .flower9 { left: 85%; top: 100%; animation-delay: 4.5s; }
+  .flower10 { left: 95%; top: 100%; animation-delay: 6s; }
+  
+  
